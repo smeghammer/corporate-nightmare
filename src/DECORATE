@@ -1,5 +1,1 @@
-#include "Actors/ImpaledCorpses/DECORATE"
-#include "Actors/UpsideDownCorpses/DECORATE"
-#include "Actors/Flesh/DECORATE"
-#include "Actors/FlamerBaron/DECORATE"
-#include "Actors/Flames/DECORATE.txt"
+#include "Actors/Garden/DECORATE"
