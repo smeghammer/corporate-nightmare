@@ -8,7 +8,7 @@ map MAP15 "Going up?"
 {
 	levelnum=15
 	next="MAP16"
-	sky1 = "OSKY20",0.5
+	sky1 = "OSKY11"
 	music = "D_IN_CIT"
 	NoJump
 }
