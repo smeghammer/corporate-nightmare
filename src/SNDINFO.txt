@@ -1,19 +1,5 @@
-HIT_SLDG   HIT_SLDG
+glass/break   DSGLASS
+$limit    glass/break 0
+$pitchshift    glass/break 3
+$rolloff    glass/break 1000 2000
 
-//FlamerBaron
-weapons/scorch                Sounds/FlamerBaron/dsscorch
-weapons/onfire                Sounds/FlamerBaron/dsonfire
-weapons/flamer                Sounds/FlamerBaron/dsflamer
-
-//Fire
-environment/			Sounds/Flames/
-
-SFX/FireStart	Sounds/Flames/FIRESTRT
-SFX/FireLoop1	Sounds/Flames/FIRELOP1
-SFX/FireLoop2	Sounds/Flames/FIRELOP2
-SFX/FireLoop3	Sounds/Flames/FIRELOP3
-SFX/FireDie	Sounds/Flames/FIREDIE
-
-$Limit SFX/FireStart	0
-$Limit SFX/FireLoop	0
-$Limit SFX/FireDie	0

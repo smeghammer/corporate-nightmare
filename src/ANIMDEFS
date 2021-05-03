@@ -1,0 +1,16 @@
+switch SHAWN1
+   on sound glass/break
+   pic TRANSP01 tics 0
+   
+   off
+   pic TRANSP01 tics 0
+  
+switch TRANSP02
+   on sound glass/break
+   pic TRANSP01 tics 0
+   
+   off
+   pic TRANSP01 tics 0
+   
+   
+

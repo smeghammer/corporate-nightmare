@@ -12,3 +12,12 @@ map MAP15 "Going up?"
 	music = "D_IN_CIT"
 	NoJump
 }
+
+map BAK "TEST?"
+{
+	levelnum=50
+	next="MAP16"
+	sky1 = "OSKY11"
+	music = "D_IN_CIT"
+	NoJump
+}
