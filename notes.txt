@@ -60,3 +60,10 @@ breakable glass:
 
 70
 
+
+
+KEYS:
+-----
+
+On collection of [red] key, trigger spawning of monsters going back up...
+
