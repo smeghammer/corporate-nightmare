@@ -20,6 +20,8 @@ script 100 ENTER{
 		TranslucentLine(shootable_glass_id_mapper[0][a],100);	//ground
 		TranslucentLine(shootable_glass_id_mapper[1][a],100);	//1st
 	}
+	/* x-align step tex: */
+	Sector_SetFloorPanning(74,32,0,0,0);
 }
 
 script 1(int floorIndex, int lineIndex){

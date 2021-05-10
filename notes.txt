@@ -49,11 +49,14 @@ breakable glass:
 
 2nd floor line portals:
 -----------------------
+15
+16
+58
+60
+62
+11
+12
 
 
- 
-
-
-
-
+70
 
