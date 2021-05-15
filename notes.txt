@@ -100,3 +100,37 @@ VOID HERE
 INNERMOST (translucent side)
 
 
+
+START:
+------
+At back??
+
+
+
+BLUE KEY
+--------
+Simple office complex on GF,L-Wing of main building. Low tier monsters, possibly a hellknight or two? Custom ones? Check out R667
+
+
+RED KEY
+-------
+Harder than blue key!
+path to red key - doors back up are not openable until the doors are open - these will offer a switch that does a normal open then close with suitable delay.
+goodies and monsterfs too...
+
+
+Exit thingie
+------------
+YELLOW KEY
+A switch that opens the exit tunnel.
+Continue the translucent console theme?
+In corporate main offices? Loads of BoH's? Other R667 variants? TEST
+needs to be a puzzle of some sort - possibly another hole to basement? (It might be possible to have a vertical shaft with windows that is visible on GF and descends to basement without the 'ing HOMs...) TO TEST.
+
+
+
+
+
+
+
+
