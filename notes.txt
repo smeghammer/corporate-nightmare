@@ -67,3 +67,36 @@ KEYS:
 
 On collection of [red] key, trigger spawning of monsters going back up...
 
+
+swap ed key for blue key. Add blue door to LH gnd floor, and put ed key in there. Leave ed ket to steps
+
+
+
+overhang dummy sector (for HOM prevention) test 3D floors to simulate the ground floor better - I can now see the sides from the upper floors...
+
+mirror glass at back.
+
+
+
+1 way glass:
+OUTERMOST (mirrored side)
+--------------------- 156 (line_setportal), 0,1,0,0 (we are looking OUT, not in)
+
+
+--------------------- 208 (translucentline) midtex for glass (e.g. COMPBLUE), 0,120,0,0 (the colour we want our mirrored glass to be)
+
+
+--------------------- 182 (line_mirror) Mo args, hence the 208 line in front...
+VOID HERE
+VOID HERE			  Void here cos we are not actually using a transparent sector...
+VOID HERE
+--------------------- [no special, tex not important - see below]
+
+
+--------------------- 156 (line_setportal), 1,2,0,0. This is a portal to the one above, to 
+
+
+--------------------- 208 (translucentline) midtex for glass (e.g. COMPBLUE), 0,120,0,0 (the colour we want our see through glass to be)
+INNERMOST (translucent side)
+
+
