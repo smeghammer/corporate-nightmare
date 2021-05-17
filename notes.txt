@@ -128,7 +128,87 @@ In corporate main offices? Loads of BoH's? Other R667 variants? TEST
 needs to be a puzzle of some sort - possibly another hole to basement? (It might be possible to have a vertical shaft with windows that is visible on GF and descends to basement without the 'ing HOMs...) TO TEST.
 
 
+shootable glass:
+----------------
 
+--------------------- 121 (line_setident, n,0,0,0,0) See script below. MIDTEX of suitable texture, e.g. SHAWN3, impassable
+--------------------- 80 (acs_execute,scriptnum,0,floor,index). G1. This is just a trigger line.
+--------------------- 49 (glassbreak). G1, MIDTEX: TRANSP02
+
+NOTE: The index is the ARRAY POSITION of the line ID in question (zero-indexed!!)
+
+ - Need to define a texture (here, a transparent one, TRANSP01, TRANSP02)
+ - need to define a switch with these two textures 
+ANIMDEFS:
+switch SHAWN1
+   on sound glass/break
+   pic TRANSP01 tics 0
+   
+   off
+   pic TRANSP01 tics 0
+  
+switch TRANSP02
+   on sound glass/break
+   pic TRANSP01 tics 0
+   
+   off
+   pic TRANSP01 tics 0
+
+
+/*
+SCRIPT 1:
+---------
+*/
+
+/* 
+define lineIDs of all shootable glass windows 
+ - gnd: 50 up
+ - 1st: 1 up
+ 
+ NOTE: The 
+*/
+
+int shootable_glass_id_mapper[2][36] = {
+	{-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1},		//ground floor
+	{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36}		//first floor
+};
+int shootable_glass_count = 36;
+script 100 ENTER{
+	/* set the translucency on shootable glass: */
+	for(int a=0;a<shootable_glass_count; a++){
+		log(s:"setting line transparency|: ",i:shootable_glass_id_mapper[1][a]);
+		TranslucentLine(shootable_glass_id_mapper[0][a],100);	//ground
+		TranslucentLine(shootable_glass_id_mapper[1][a],100);	//1st
+	}
+	/* x-align step tex: */
+	Sector_SetFloorPanning(74,32,0,0,0);
+}
+
+script 1(int floorIndex, int lineIndex){
+	log(s:"shooting glass");
+	log(s:"floor: ", i:floorIndex);
+	log(s:"pane: ",i:lineIndex);
+	log(s:"line ID: ", i:shootable_glass_id_mapper[floorIndex][lineIndex]);
+	/* remove midtex for the pane */
+	SetLineTexture(shootable_glass_id_mapper[floorIndex][lineIndex], SIDE_FRONT, TEXTURE_MIDDLE, "-"); //remove middle 
+    SetLineTexture(shootable_glass_id_mapper[floorIndex][lineIndex], SIDE_BACK, TEXTURE_MIDDLE, "-");
+}
+
+
+EXIT LOGIC:
+
+
+Forcefield?
+-----------
+
+ - MIDTEX linedef as per translucent line. 
+ - Make it ACS 80 shootable 
+   - may need to assign a lineid?
+ - react to GR
+ - change its TRANSLUCENCY to 255, pause, and back
+   - (can I detect CURRENT translucency?)
+ - create ANIMDEFS for this switch
+ - it would be nice if I can use ACS to turn it off again.
 
 
 
