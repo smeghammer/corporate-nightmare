@@ -3,3 +3,11 @@ $limit    glass/break 0
 $pitchshift    glass/break 3
 $rolloff    glass/break 1000 2000
 
+fem/sight FEMZSIT
+fem/pain FEMZPAIN
+fem/death FEMZDHT
+fem/active FEMZACT
+KnifeHit DSKNIFE
+
+
+

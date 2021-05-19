@@ -1,1 +1,6 @@
 #include "Actors/Garden/DECORATE"
+#include "Actors/FemaleScientist/DECORATE"
+#include "Actors/FemaleScientist2/DECORATE"
+#include "Actors/ZombieScientist/DECORATE"
+#include "Actors/ZombieScientist3/DECORATE"
+#include "Actors/RailArachno/DECORATE"

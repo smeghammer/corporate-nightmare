@@ -24,15 +24,21 @@ thinggroup c 66C "Custom Decoration"
 #
 # DOOM/DOOM2:
 
-# thing 12328 c - 20 ZBAMF1   "Beam Zombie"
-# thing 15000 c - 20 CIMPF1   "Cyber Imp"
-# thing 30124 c - 20 DPOSE1   "Double Chaingunner"
-# thing 15056 c - 16 EXTRE1   "Exterminator"
-# thing 31497 c - 20 FLMZE1   "Flamer Zombie"
-# thing 3125 c - 60 RSPIB1E1   "Rail Arachnotron"
-# thing 9656 c - 8 RATAC2C8   "Small Rat"
-# thing 15001 c - 40 UACBJ8   "UAC Bot"
-# thing 31004 c - 40 FLBRNE1   "Flamer Baron"
+thing 12328 c - 20 ZBAMF1   "Beam Zombie"
+thing 15000 c - 20 CIMPF1   "Cyber Imp"
+thing 30124 c - 20 DPOSE1   "Double Chaingunner"
+thing 15056 c - 16 EXTRE1   "Exterminator"
+thing 31497 c - 20 FLMZE1   "Flamer Zombie"
+thing 3125 c - 60 RSPIB1E1   "Rail Arachnotron"
+thing 9656 c - 8 RATAC2C8   "Small Rat"
+thing 15001 c - 40 UACBJ8   "UAC Bot"
+thing 31004 c - 40 FLBRNE1   "Flamer Baron"
+thing 15500 c - 16 FSZKA1   "Female Scientist"
+thing 15501 c - 16 FSZWE1   "Female Scientist 2"
+thing 15503 c - 16 SCZAE1   "Zombie Scientist"
+thing 15502 c - 16 SCZHE1   "Zombie Scientist 3"
+
+
 
 # HERETIC
 thing 15010 c - 40 PLANA0   "Garden tree 1"
