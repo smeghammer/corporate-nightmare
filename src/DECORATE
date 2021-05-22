@@ -4,3 +4,5 @@
 #include "Actors/ZombieScientist/DECORATE"
 #include "Actors/ZombieScientist3/DECORATE"
 #include "Actors/RailArachno/DECORATE"
+#include "Actors/DoubleChaingunner/DECORATE"
+#include "Actors/FlamerZombie/DECORATE"

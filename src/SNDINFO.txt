@@ -9,5 +9,10 @@ fem/death FEMZDHT
 fem/active FEMZACT
 KnifeHit DSKNIFE
 
+//FlamerZombie
+weapons/scorch                Sounds/FlamerZombie/dsscorch
+weapons/onfire                Sounds/FlamerZombie/dsonfire
+weapons/flamer                Sounds/FlamerZombie/dsflamer
+
 
 

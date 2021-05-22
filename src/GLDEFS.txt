@@ -1,0 +1,3 @@
+//Enemies
+#include gldefs/DoubleChaingunner.txt
+#include gldefs/FlamerZombie.txt

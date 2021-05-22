@@ -211,6 +211,16 @@ Forcefield?
  - it would be nice if I can use ACS to turn it off again.
 
 
-
+ - better start position
+ - monster closets/ACS spawns in main atrium after each encounter
+ 
+ 
+TODO:
+-----
+ - have some monsters in the corridor before the descent into red key. Make sure they are visible when in teh main area.
+ - Trigger monster closet #3 after getting the red key.
+ - MORE monsters? Dribble them out?
+ 
+ 
 
 
