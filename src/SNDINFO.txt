@@ -14,5 +14,37 @@ weapons/scorch                Sounds/FlamerZombie/dsscorch
 weapons/onfire                Sounds/FlamerZombie/dsonfire
 weapons/flamer                Sounds/FlamerZombie/dsflamer
 
+//BeamZombie
+BeamGuy/Attack					Sounds/BeamZombie/DSBEAMAT
+BeamGuy/Hit						Sounds/BeamZombie/DSBEAMHT
+
+$limit BeamGuy/Hit 0
+
+//cyberimp
+$RANDOM CIMPSIT { Sounds/CyberImp/CIMPSIT1 Sounds/CyberImp/CIMPSIT2 }
+CIMPSIT1	Sounds/CyberImp/CIMPCIT1
+CIMPSIT2	Sounds/CyberImp/CIMPSIT2
+$RANDOM CIMPDTH { Sounds/CyberImp/CIMPDTH1 Sounds/CyberImp/CIMPDTH2 }
+CIMPDTH1	Sounds/CyberImp/CIMPDTH1
+CIMPDTH2	Sounds/CyberImp/CIMPDTH2
+CIMPPAIN	Sounds/CyberImp/CIMPPAIN
+CIMPACT		Sounds/CyberImp/CIMPACT
+
+
+//RailArachno
+baby/chargerailgun	DSRGCHRG
+
+//CyberBaron
+cbaron/sight	cbarnsit
+cbaron/pain	cbarnpai
+cbaron/death	cbarndth
+cbaron/active	cbarnact
+cbaron/metal	cmetal
+
+//CyberBaron
+superbaron/scream dssbsit
+superbaron/pain dssbpain
+superbaron/death dssbdth
+superbaron/act dssbact
 
 

@@ -26,6 +26,8 @@ thinggroup c 66C "Custom Decoration"
 
 thing 12328 c - 20 ZBAMF1   "Beam Zombie"
 thing 15000 c - 20 CIMPF1   "Cyber Imp"
+thing 10000 c - 20 CBOSA1   "Cyber Baron"
+thing 3333 c - 20 BRUSA1   "Bruiser Demon"
 thing 30124 c - 20 DPOSE1   "Double Chaingunner"
 thing 15056 c - 16 EXTRE1   "Exterminator"
 thing 31497 c - 20 FLMZE1   "Flamer Zombie"

@@ -38,6 +38,13 @@ script 100 ENTER{
 	
 	/* rotate consoles 180 */
 	Sector_SetRotation(121,180,0);
+	
+	/* set final room force fields (all 210)*/
+	TranslucentLine(210,100);
+	
+	/* window by stairsD */
+	Line_SetBlocking(188,514,0);
+	
 }
 
 script 1(int floorIndex, int lineIndex){
@@ -49,3 +56,33 @@ script 1(int floorIndex, int lineIndex){
 	SetLineTexture(shootable_glass_id_mapper[floorIndex][lineIndex], SIDE_FRONT, TEXTURE_MIDDLE, "-"); //remove middle 
     SetLineTexture(shootable_glass_id_mapper[floorIndex][lineIndex], SIDE_BACK, TEXTURE_MIDDLE, "-");
 }
+
+/* activate thing(s) with supplied TID: */
+/* activate thing(s) with supplied TID: */
+script 2(int TID){
+	//wake up last monsters:
+	Thing_Activate(TID);
+	
+	if(TID == 40){	//special case for exit
+		
+		//remove midtex:
+		int counter=100;
+		while(counter > 0){
+			TranslucentLine(210,counter);
+			counter--;
+			delay(1);
+		}
+		//open the forcefields:
+		Line_SetBlocking(210,0,BLOCKF_CREATURES);
+		SetLineTexture(210,SIDE_FRONT, TEXTURE_MIDDLE, "-");
+		SetLineTexture(210,SIDE_BACK, TEXTURE_MIDDLE, "-");
+	
+		while(ThingCount(T_NONE,TID)){
+			delay(35);	//approx 1 second
+		}
+		//once all are dead, open exit:
+		Ceiling_RaiseByValue(122,1,40);
+	}
+	
+}
+

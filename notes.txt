@@ -217,10 +217,25 @@ Forcefield?
  
 TODO:
 -----
- - have some monsters in the corridor before the descent into red key. Make sure they are visible when in teh main area.
+ - have some monsters in the corridor before the descent into red key. Make sure they are visible when in teh main area.	OK
  - Trigger monster closet #3 after getting the red key.
  - MORE monsters? Dribble them out?
  
  
+For final room:
+---------------
+Switch in office:
+ - ACS 80
+	- un-dormant's monsters
+	- set line ID 210 to no midtex and not blocking
+	- begin counter for TID 40 > 0
+ - on zero, drop exit bars
 
-
+Added +NOINFIGHTING to:
+ - rail arachno
+ - bruiser demon
+ - cyber baron
+ 
+ 
+ Check DECORATE scripts for brightmap patha!!!
+ 

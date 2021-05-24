@@ -9,6 +9,7 @@ ACTOR RailArachnotron 3125
 	PainChance 192
 	Monster
 	+FLOORCLIP
+	+NOINFIGHTING
 	SeeSound "baby/sight"
 	PainSound "baby/pain"
 	DeathSound "baby/death"

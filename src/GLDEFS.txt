@@ -1,3 +1,10 @@
 //Enemies
+#include gldefs/BeamZombie.txt
+#include gldefs/BruiserDemon.txt
+#include gldefs/CyberBaron.txt
 #include gldefs/DoubleChaingunner.txt
+//#include gldefs/Exterminator.txt
 #include gldefs/FlamerZombie.txt
+#include gldefs/RailArachno.txt
+
+

@@ -6,3 +6,7 @@
 #include "Actors/RailArachno/DECORATE"
 #include "Actors/DoubleChaingunner/DECORATE"
 #include "Actors/FlamerZombie/DECORATE"
+#include "Actors/BeamZombie/DECORATE"
+#include "Actors/CyberImp/DECORATE"
+#include "Actors/CyberBaron/DECORATE.txt"
+#include "Actors/BruiserDemon/DECORATE.txt"
